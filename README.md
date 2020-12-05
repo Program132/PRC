@@ -37,7 +37,9 @@ __Soon__
 __Examples__
 
 _Print:_
+
 >print Hello
+
 *Hello*
 
 
@@ -58,6 +60,7 @@ _Variable Example 2:_
     send myVar
 
 *Hallo*
+
 *Bonjour*
 
 
