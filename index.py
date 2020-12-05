@@ -36,6 +36,22 @@ with open("main.prc", "r+") as file:
             elif len(args) == 4:
                 if args[2] == "=":
                     var.addVar(args[1], args[3])
-                    #var.printAll()
             else:
                 var.errorBasic()
+
+        if args[0] == "send":
+            if len(args) == 1:
+                var.sendError()
+            elif len(args) == 2:
+                if args[1] == "value":
+                    var.printAll()
+                else:
+                    var.send(args[1])
+            else:
+                var.sendError()
+
+        if args[0] == "set":
+            if len(args) == 1:
+                var.serError()
+            else:
+                var.setV(args[1], args[2])

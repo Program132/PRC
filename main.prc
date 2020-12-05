@@ -1,3 +1,9 @@
-print Salut ca va ?
-variable test = cc
-variable hello = bonjour
+variable test = bonjour
+variable cc = cv
+send value
+send test
+print Ancienne variable:
+send test
+set test hallo
+print Changement de la variable:
+send test
