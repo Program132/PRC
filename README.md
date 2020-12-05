@@ -2,9 +2,9 @@
 
 __Information__
 
-PRC is a langage of programming create by Program! 
+PRC is a langage of programming create by Program!
 
-I use the langage Python to create PRC. 
+I use the langage Python to create PRC.
 
 This language will evolve over time!
 
@@ -18,6 +18,7 @@ In development.
 
 __Soon__
 * Variables
+
 
 (Don't started)
 
