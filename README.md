@@ -8,20 +8,61 @@ This language will evolve over time!
 
 
 
+-------------------------------------------------
+
+
+
 __News__
 
 * Print
+* Variables
 
-In development.
+Declare, show(send), set.
+
+
+
+-------------------------------------------------
 
 
 
 __Soon__
-* Variables
+* Files
 
 
-(Don't started)
 
+-------------------------------------------------
+
+
+
+__Examples__
+
+_Print:_
+>print Hello
+*Hello*
+
+
+
+_Variable Example 1:_
+
+    variable myVar = Hallo
+    send myVar
+
+*Hallo*
+
+
+_Variable Example 2:_
+
+    variable myVar = Hallo
+    send myVar
+    set myVar Bonjour
+    send myVar
+
+*Hallo*
+*Bonjour*
+
+
+
+-------------------------------------------------
 
 
 
