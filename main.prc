@@ -1,1 +1,3 @@
-print hello here
+print Salut ca va ?
+variable test = cc
+variable hello = bonjour
