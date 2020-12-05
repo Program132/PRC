@@ -19,3 +19,9 @@ In development.
 __Soon__
 * Variables
 (Don't started).
+
+
+
+__Discord__
+Join the server discord to see update, to ask anything and everthing.
+https://discord.gg/e44jCnpTqA
