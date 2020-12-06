@@ -16,9 +16,12 @@ __News__
 
 * Variables
 * Files
+* math and mathPrint
+
 
 Declare, show(send), set.
 Read, write.
+add, remove, multi and div
 
 
 
@@ -27,7 +30,8 @@ Read, write.
 
 
 __Soon__
-* Math
+* Documentation
+* (Soon new module)
 
 
 

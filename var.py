@@ -54,3 +54,37 @@ def setV(name, value):
     var = name
     newValue = value  
     variables[var] = newValue
+
+
+# Math 
+
+def matherror():
+    return print("Error, you must set a mode, variable and a value.")
+
+def mathAdd(name, value):
+    try:
+        result = int(variables[name]) + int(value)
+        variables[name] = result
+    except:
+        print("Error, if it's string you can't use this. Change your code.")
+
+def mathRem(name, value):
+    try:
+        result = int(variables[name]) - int(value)
+        variables[name] = result
+    except:
+        print("Error, if it's string you can't use this. Change your code.")
+
+def mathDiv(name, value):
+    try:
+        result = int(variables[name]) / int(value)
+        variables[name] = result
+    except:
+        print("Error, if it's string you can't use this. Change your code.")
+
+def mathMulti(name, value):
+    try:
+        result = int(variables[name]) * int(value)
+        variables[name] = result
+    except:
+        print("Error, if it's string you can't use this. Change your code.")

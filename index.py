@@ -60,6 +60,22 @@ with open("main.prc", "r+") as file:
                 value = args[1:1000000]
                 var.setV(name, value)
 
+        if args[0] == "math":
+            if len(args) == 4:
+                mode = args[1]
+                v = args[2]
+                value = args[3]
+                if mode == "add":
+                    var.mathAdd(v, value)
+                elif mode == "remove":
+                    var.mathRem(v, value)
+                elif mode == "div":
+                    var.mathDiv(v, value)
+                elif mode == "multi":
+                    var.mathMulti(v, value)
+            else:
+                var.matherror()
+
         
         ## Files
 
