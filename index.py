@@ -1,6 +1,7 @@
 import syntaxe
 import PrInt
 import var
+import files
 
 with open("main.prc", "r+") as file:
     lines = file.readlines()
@@ -57,3 +58,15 @@ with open("main.prc", "r+") as file:
                 name = args[1]
                 value = args[1:1000000]
                 var.setV(name, value)
+
+        
+
+        ## Files
+
+        if args[0] == "files":
+            if len(args) == 3:
+                if args[1] == "read":
+                    f = args[2]
+                    files.reading(f)
+            else:
+                files.error()
