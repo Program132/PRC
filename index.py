@@ -60,7 +60,6 @@ with open("main.prc", "r+") as file:
                 var.setV(name, value)
 
         
-
         ## Files
 
         if args[0] == "files":
