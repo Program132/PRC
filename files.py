@@ -1,5 +1,5 @@
 def error():
-    return print("Error, you must set a file.")
+    return print("Error, check your code. If you use 'read' you must set file. If you use 'write', you must set file and a text.")
 
 def reading(_file):
     fichier = str(_file)
