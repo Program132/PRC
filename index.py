@@ -2,6 +2,7 @@ import syntaxe
 import PrInt
 import var
 import files
+import mathPrint
 
 with open("main.prc", "r+") as file:
     lines = file.readlines()
@@ -78,6 +79,24 @@ with open("main.prc", "r+") as file:
                     f = args[2]
                     files.reading(f)
 
-
             else:
                 files.error()
+
+
+
+        ## MathPrint
+
+        if args[0] == "mathPrint":
+            if len(args) >= 3:
+                a = int(args[2])
+                b = int(args[3])
+                if args[1] == "add":
+                    mathPrint.add(a, b)
+                elif args[1] == "remove":
+                    mathPrint.remove(a, b)
+                elif args[1] == "div":
+                    mathPrint.div(a, b)
+                elif args[1] == "multi":
+                    mathPrint.multi(a, b)
+            else:
+                mathPrint.error()

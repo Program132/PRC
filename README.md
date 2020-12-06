@@ -14,10 +14,11 @@ This language will evolve over time!
 
 __News__
 
-* Print
 * Variables
+* Files
 
 Declare, show(send), set.
+Read, write.
 
 
 
@@ -26,7 +27,7 @@ Declare, show(send), set.
 
 
 __Soon__
-* Files
+* Math
 
 
 
