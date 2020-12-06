@@ -64,7 +64,15 @@ with open("main.prc", "r+") as file:
         ## Files
 
         if args[0] == "files":
-            if len(args) == 3:
+            if len(args) >= 2:
+                if args[1] == "write":
+                    f = args[2]
+                    text = str(args[3:1000])
+                    text = text.replace("[", "")
+                    text = text.replace("]", "")
+                    text = text.replace("'", "")
+                    text = text.replace(",", "")
+                    files.write(f, text)
                 if args[1] == "read":
                     f = args[2]
                     files.reading(f)
