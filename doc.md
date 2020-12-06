@@ -1,45 +1,37 @@
-#### Documentation PRC
+# Documentation PRC
 
-
-__Informations__
+## Informations
 
 PRC is a programming langage.
 You want learn to use it?
 
 
-__Started__
+## Started
 
-* How print ?
+*How to print something ?*
 
-_print YOUR ARGUMENT_
+`print <YOUR ARGUMENT>`
 
+*How to declare a variable ?*
 
+`variable <NAME> = <VALUE>`
 
-* How declare a variable ?
+*How to set an already existing variable ?*
 
-_variable NAME = VALUE_
+`set <NAME> <NEW-VALUE>`
 
+*How to see a value of a variable ?*
 
-
-* How to set a variable ?
-
-_set NAME NEW-VALUE_
-
-
-
-* How to see a value of a variable ?
-
-_send NAME_
+`send NAME`
 
 
+## Files
 
-__Files__
-
-* How read my file ?
-_files read myFile.txt_
+*How to read my file ?*
+`files read myFile.txt`
 >module mode file
 
 
-* How write in my file ?
-_files write myFile.txt I want this text in my file!_
+*How to write in my file ?*
+`files write myFile.txt I want this text in my file!`
 >module mode file text
