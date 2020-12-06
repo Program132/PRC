@@ -73,16 +73,12 @@ with open("main.prc", "r+") as file:
                     text = text.replace("'", "")
                     text = text.replace(",", "")
                     files.write(f, text)
-                else:
-                    files.errorWrite
 
 
                 if args[1] == "read":
                     f = args[2]
                     files.reading(f)
-                else:
-                    files.errorRead()
 
-                    
+
             else:
                 files.error()
