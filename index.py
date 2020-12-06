@@ -54,4 +54,6 @@ with open("main.prc", "r+") as file:
             if len(args) == 1:
                 var.serError()
             else:
-                var.setV(args[1], args[2])
+                name = args[1]
+                value = args[1:1000000]
+                var.setV(name, value)

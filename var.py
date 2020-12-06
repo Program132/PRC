@@ -43,7 +43,12 @@ def send(name):
     if name == "":
         sendError()
     else:
-        return print(variables[name])
+        resulte = variables[name]
+        resulte1 = str(resulte).replace("[", '')
+        resulte2 = str(resulte1).replace("]", '')
+        resulte3 = str(resulte2).replace("'", '')
+        resulte4 = str(resulte3).replace(",", '')
+        return print(resulte4)
 
 def setV(name, value):
     var = name
