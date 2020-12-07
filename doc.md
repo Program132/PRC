@@ -27,6 +27,12 @@ You want learn to use it?
 
 
 
+* How set an already existing variable with an other variable ?
+
+`setVar VARIABLE1 VARIABLE2`
+
+
+
 * How to see a value of a variable ?
 
 `send NAME`
@@ -68,7 +74,7 @@ You want learn to use it?
 
 ## math
 
-* How can I set my value with a calcul ?
+* How can I set my variable with a calcul ?
 
 `math add MyVar 10`
 
