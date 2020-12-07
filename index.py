@@ -1,7 +1,7 @@
-import PrInt
-import var
-import files
-import mathPrint
+import libs.PrInt
+import libs.var
+import libs.files
+import libs.mathPrint
 
 with open("main.prc", "r+") as file:
     lines = file.readlines()
@@ -15,13 +15,13 @@ with open("main.prc", "r+") as file:
 
         if args[0] == "print":
             if len(args) == 1:
-                PrInt.Error()
+                libs.PrInt.Error()
             elif len(args) >= 2:
                 value, *b = args
                 b = " ".join(b)
-                PrInt.Basic(b)
+                libs.PrInt.Basic(b)
             else: 
-                PrInt.DontFound()
+                libs.PrInt.DontFound()
 
 
 
@@ -29,43 +29,43 @@ with open("main.prc", "r+") as file:
 
         if args[0] == "variable":
             if len(args) == 1:
-                var.errorBasic()
+                libs.var.errorBasic()
             elif len(args) == 2:
-                var.errorBasic()
+                libs.var.errorBasic()
             elif len(args) == 3:
-                var.errorBasic()
+                libs.var.errorBasic()
             elif len(args) == 4:
                 if args[2] == "=":
-                    var.addVar(args[1], args[3])
+                    libs.var.addVar(args[1], args[3])
             else:
-                var.errorBasic()
+                libs.var.errorBasic()
 
         if args[0] == "send":
             if len(args) == 1:
-                var.sendError()
+                libs.var.sendError()
             elif len(args) == 2:
                 if args[1] == "value":
-                    var.printAll()
+                    libs.var.printAll()
                 else:
-                    var.send(args[1])
+                    libs.var.send(args[1])
             else:
-                var.sendError()
+                libs.var.sendError()
 
         if args[0] == "set":
             if len(args) == 1:
-                var.serError()
+                libs.var.serError()
             else:
                 name = args[1]
                 value = args[1:1000000]
-                var.setV(name, value)
+                libs.var.setV(name, value)
 
         if args[0] == "setVar":
             if len(args) == 3:
                 variable1 = args[1]
                 variable2 = args[2]
-                var.setVarEx(variable1, variable2)
+                libs.var.setVarEx(variable1, variable2)
             else:
-                var.setVarError()
+                libs.var.setVarError()
 
         if args[0] == "math":
             if len(args) == 4:
@@ -73,15 +73,15 @@ with open("main.prc", "r+") as file:
                 v = args[2]
                 value = args[3]
                 if mode == "add":
-                    var.mathAdd(v, value)
+                    libs.var.mathAdd(v, value)
                 elif mode == "remove":
-                    var.mathRem(v, value)
+                    libs.var.mathRem(v, value)
                 elif mode == "div":
-                    var.mathDiv(v, value)
+                    libs.var.mathDiv(v, value)
                 elif mode == "multi":
-                    var.mathMulti(v, value)
+                    libs.var.mathMulti(v, value)
             else:
-                var.matherror()
+                libs.var.matherror()
 
         
         ## Files
@@ -95,15 +95,15 @@ with open("main.prc", "r+") as file:
                     text = text.replace("]", "")
                     text = text.replace("'", "")
                     text = text.replace(",", "")
-                    files.write(f, text)
+                    libs.files.write(f, text)
 
 
                 if args[1] == "read":
                     f = args[2]
-                    files.reading(f)
+                    libs.files.reading(f)
 
             else:
-                files.error()
+                libs.files.error()
 
 
 
@@ -114,12 +114,12 @@ with open("main.prc", "r+") as file:
                 a = int(args[2])
                 b = int(args[3])
                 if args[1] == "add":
-                    mathPrint.add(a, b)
+                    libs.mathPrint.add(a, b)
                 elif args[1] == "remove":
-                    mathPrint.remove(a, b)
+                    libs.mathPrint.remove(a, b)
                 elif args[1] == "div":
-                    mathPrint.div(a, b)
+                    libs.mathPrint.div(a, b)
                 elif args[1] == "multi":
-                    mathPrint.multi(a, b)
+                    libs.mathPrint.multi(a, b)
             else:
-                mathPrint.error()
+                libs.mathPrint.error()
