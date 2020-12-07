@@ -68,8 +68,16 @@ _Variable Example 2:_
 
 
 
-## Discord
+## Links
+
+Go to the link to start, learn PRC!
+
+https://program132.github.io/PRC/
 
 Join the server discord to see update, to ask anything and everthing, the news and more!
 
 https://discord.gg/e44jCnpTqA
+
+Go to my website to know things about me.
+
+https://program132.github.io/
