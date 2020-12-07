@@ -60,11 +60,11 @@ You want learn to use it?
 >mathPrint mode number1 number2
 
 
-`mathPrint remove 10 5`
+`mathPrint remove 10 5
 
-`mathPrint multi 10 5`
+mathPrint multi 10 5
 
-`mathPrint div 100 10`
+mathPrint div 100 10`
 
 
 
@@ -78,8 +78,8 @@ You want learn to use it?
 
 
 
-`math remove MyVar 2`
+`math remove MyVar 2
 
-`math multi MyVar 5`
+math multi MyVar 5
 
-`math div MyVar 2`
+math div MyVar 2`
