@@ -1,6 +1,6 @@
-#### PRC
+# PRC
 
-__Information__
+## Information
 
 PRC is a langage of programming create by Program!
 I use the langage Python to create PRC.
@@ -12,24 +12,18 @@ This language will evolve over time!
 
 
 
-__News__
+## News
 
 * Variables
 * Files
 * math and mathPrint
 
 
-Declare, show(send), set.
-Read, write.
-add, remove, multi and div
-
-
-
 -------------------------------------------------
 
 
 
-__Soon__
+## Soon
 * Documentation
 * (Soon new module)
 
@@ -39,11 +33,11 @@ __Soon__
 
 
 
-__Examples__
+## Examples
 
 _Print:_
 
-    print Hello
+    `print Hello`
 
 *Hello*
 
@@ -51,18 +45,18 @@ _Print:_
 
 _Variable Example 1:_
 
-    variable myVar = Hallo
-    send myVar
+    `variable myVar = Hallo`
+    `send myVar`
 
 *Hallo*
 
 
 _Variable Example 2:_
 
-    variable myVar = Hallo
-    send myVar
-    set myVar Bonjour
-    send myVar
+    `variable myVar = Hallo`
+    `send myVar`
+    `set myVar Bonjour`
+    `send myVar`
 
 *Hallo*
 
@@ -74,7 +68,7 @@ _Variable Example 2:_
 
 
 
-__Discord__
+## Discord
 
 Join the server discord to see update, to ask anything and everthing, the news and more!
 
