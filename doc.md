@@ -1,76 +1,85 @@
-#### Documentation PRC
+# Documentation PRC
 
 
-__Informations__
+## Informations
 
 PRC is a programming langage.
 You want learn to use it?
 
 
-__Started__
+## Started
 
-* How print ?
+* How to print something ?
 
-_print YOUR ARGUMENT_
+`print YOUR ARGUMENT`
 
 
 
 * How declare a variable ?
 
-_variable NAME = VALUE_
+`variable NAME = VALUE`
 
 
 
-* How to set a variable ?
+* How to set an already existing variable ?
 
-_set NAME NEW-VALUE_
+`set NAME NEW-VALUE`
 
 
 
 * How to see a value of a variable ?
 
-_send NAME_
+`send NAME`
 
 
 
-__Files__
+## Files
 
-* How read my file ?
-_files read myFile.txt_
+* How to read my file ?
+
+`files read myFile.txt`
+
 >module mode file
 
 
-* How write in my file ?
-_files write myFile.txt I want this text in my file!_
+
+* How to write in my file ?
+
+`files write myFile.txt I want this text in my file!`
+
 >module mode file text
 
 
 
-__mathPrint__
+## mathPrint
 
 * How can I see my calcul in console ?
-_mathPrint add 5 6_
+
+`mathPrint add 5 6`
 
 >mathPrint mode number1 number2
 
 
-_mathPrint remove 10 5_
+`mathPrint remove 10 5`
 
-_mathPrint multi 10 5_
+`mathPrint multi 10 5`
 
-_mathPrint div 100 10_
+`mathPrint div 100 10`
 
 
 
-__math__
+## math
 
 * How can I set my value with a calcul ?
-_math add MyVar 10_
+
+`math add MyVar 10`
 
 >math mode YourVariable Value
 
-_math remove MyVar 2_
 
-_math multi MyVar 5_
 
-_math div MyVar 2_
+`math remove MyVar 2`
+
+`math multi MyVar 5`
+
+`math div MyVar 2`
