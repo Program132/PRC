@@ -11,19 +11,19 @@ You want learn to use it?
 
 * How to print something ?
 
-`print YOUR ARGUMENT`
+    print YOUR ARGUMENT
 
 
 
 * How declare a variable ?
 
-`variable NAME = VALUE`
+    variable NAME = VALUE
 
 
 
 * How to set an already existing variable ?
 
-`set NAME NEW-VALUE`
+set NAME NEW-VALUE
 
 
 

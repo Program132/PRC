@@ -37,7 +37,7 @@ This language will evolve over time!
 
 _Print:_
 
-    `print Hello`
+    print Hello
 
 *Hello*
 
@@ -45,18 +45,18 @@ _Print:_
 
 _Variable Example 1:_
 
-    `variable myVar = Hallo
-    send myVar`
+    variable myVar = Hallo
+    send myVar
 
 *Hallo*
 
 
 _Variable Example 2:_
 
-    `variable myVar = Hallo
+    variable myVar = Hallo
     send myVar
     set myVar Bonjour
-    send myVar`
+    send myVar
 
 *Hallo*
 
