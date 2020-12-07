@@ -49,6 +49,7 @@ def send(name):
         resulte3 = str(resulte2).replace("'", '')
         resulte4 = str(resulte3).replace(",", '')
         return print(resulte4)
+    
 
 def setV(name, value):
     var = name
@@ -88,3 +89,12 @@ def mathMulti(name, value):
         variables[name] = result
     except:
         print("Error, if it's string you can't use this. Change your code.")
+
+
+## setVar
+
+def setVarError():
+    return print("Error, you must give 2 variables.")
+
+def setVarEx(var1, var2):
+    variables[var1] = variables[var2]

@@ -1,4 +1,3 @@
-import syntaxe
 import PrInt
 import var
 import files
@@ -59,6 +58,14 @@ with open("main.prc", "r+") as file:
                 name = args[1]
                 value = args[1:1000000]
                 var.setV(name, value)
+
+        if args[0] == "setVar":
+            if len(args) == 3:
+                variable1 = args[1]
+                variable2 = args[2]
+                var.setVarEx(variable1, variable2)
+            else:
+                var.setVarError()
 
         if args[0] == "math":
             if len(args) == 4:
