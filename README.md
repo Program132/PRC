@@ -12,20 +12,9 @@ This language will evolve over time!
 
 
 
-## News
-
-* Variables
-* Files
-* math and mathPrint
-
-
--------------------------------------------------
-
-
-
 ## Soon
-* Documentation
-* (Soon new module)
+* New module
+* Boucles
 
 
 
