@@ -1,5 +1,8 @@
 def Basic(arg):
-    return print(arg)
+    try:
+        return print(arg)
+    except:
+        return Error()
 
 def Error():
     return print("Error Print! You must set a argument in your print.")

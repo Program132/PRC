@@ -1,5 +1,5 @@
 def error():
-    return print("Error...")
+    return print("Error, you must set an argument.")
 
 def doc():
     return print("Documentation. https://program132.github.io/PRC/doc.html")
