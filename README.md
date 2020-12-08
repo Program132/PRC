@@ -13,8 +13,8 @@ This language will evolve over time!
 
 
 ## Soon
-* New module
 * Boucles
+* Conditions 
 
 
 
