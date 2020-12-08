@@ -14,7 +14,12 @@ This language will evolve over time!
 
 ## Soon
 * Boucles
+
+>Started
+
 * Conditions 
+
+>Soon
 
 
 
@@ -50,6 +55,10 @@ _Variable Example 2:_
 *Hallo*
 
 *Bonjour*
+
+_Whil Example_
+
+    whil print < 1 5 print Hello everyone
 
 
 

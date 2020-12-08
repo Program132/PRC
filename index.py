@@ -146,12 +146,12 @@ with open("main.prc", "r+") as file:
         if args[0] == "whil":
             if args[1] == "print":
                 if args[2] == "<": #check mode
-                    text = args[6:10000]
+                    text = args[5:1000000]
                     nbr1 = args[3]
                     nbr2 = args[4]
                     libs.whil.printWhilMoinsGrand(nbr1, nbr2, text)
                 elif args[2] == ">": #check mode
-                    text = args[6:10000]
+                    text = args[5:1000000]
                     nbr1 = args[3]
                     nbr2 = args[4]
                     libs.whil.printWhilgrandMoins(nbr1, nbr2, text)
