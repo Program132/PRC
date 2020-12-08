@@ -45,6 +45,7 @@ _Variable Example 1:_
 *Hallo*
 
 
+
 _Variable Example 2:_
 
     variable myVar = Hallo
@@ -56,9 +57,17 @@ _Variable Example 2:_
 
 *Bonjour*
 
-_Whil Example_
 
-    whil print < 1 5 print Hello everyone
+
+_Whil Example 1_
+
+    whil print < 1 5 Hello everyone
+
+
+_Whil Example2_
+
+    variable test = Tranquille
+    whil varSend test 5
 
 
 
