@@ -24,3 +24,6 @@ files read r.txt
 prc doc
 prc about
 prc discord
+prc website
+prc web
+prc site

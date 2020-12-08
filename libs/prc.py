@@ -9,3 +9,6 @@ def about():
 
 def discord():
     return print("Join the server discord. https://discord.com/invite/e44jCnpTqA")
+
+def website():
+    return print("The website of the project. https://program132.github.io/PRC/index.html")

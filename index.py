@@ -21,6 +21,8 @@ with open("main.prc", "r+") as file:
                     libs.prc.about()
                 elif args[1] == "discord":
                     libs.prc.discord()
+                elif args[1] == "website" or args[1] == "site" or args[1] == "web":
+                    libs.prc.website()
             else:
                 libs.prc
 
