@@ -98,3 +98,14 @@ def setVarError():
 
 def setVarEx(var1, var2):
     variables[var1] = variables[var2]
+
+
+## Whil
+
+def varSend(var, nbr):
+    number = int(nbr)
+    vari = variables[var]
+    i = 0
+    while i < number:
+        print(vari)
+        i = i + 1

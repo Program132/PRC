@@ -3,6 +3,7 @@ import libs.PrInt
 import libs.var
 import libs.files
 import libs.mathPrint
+import libs.whil
 
 with open("main.prc", "r+") as file:
     lines = file.readlines()
@@ -139,3 +140,26 @@ with open("main.prc", "r+") as file:
                     libs.mathPrint.multi(a, b)
             else:
                 libs.mathPrint.error()
+
+
+        ## Check
+        if args[0] == "whil":
+            if args[1] == "print":
+                if args[2] == "<": #check mode
+                    text = args[6:10000]
+                    nbr1 = args[3]
+                    nbr2 = args[4]
+                    libs.whil.printWhilMoinsGrand(nbr1, nbr2, text)
+                elif args[2] == ">": #check mode
+                    text = args[6:10000]
+                    nbr1 = args[3]
+                    nbr2 = args[4]
+                    libs.whil.printWhilgrandMoins(nbr1, nbr2, text)
+                else:
+                    libs.whil.checkError()
+            elif args[1] == "varSend":
+                variable = args[2]
+                nbrX = args[3]
+                libs.var.varSend(variable, nbrX)
+            else:
+                libs.whil.error()
