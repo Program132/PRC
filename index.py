@@ -1,3 +1,4 @@
+import libs.prc
 import libs.PrInt
 import libs.var
 import libs.files
@@ -9,6 +10,19 @@ with open("main.prc", "r+") as file:
     for line in lines:
         line = line.strip()
         args = line.split()
+
+        ## PRC
+
+        if args[0] == "prc":
+            if len(args) == 2:
+                if args[1] == "doc" or args[1] == "documentation":
+                    libs.prc.doc()
+                elif args[1] == "about":
+                    libs.prc.about()
+                elif args[1] == "discord":
+                    libs.prc.discord()
+            else:
+                libs.prc
 
         ## Print
 

@@ -21,3 +21,6 @@ send MyVar
 files read r.txt
 files write r.txt Hello Im a text!
 files read r.txt
+prc doc
+prc about
+prc discord
