@@ -4,6 +4,8 @@ import libs.var
 import libs.files
 import libs.mathPrint
 import libs.whil
+import libs.len
+import libs.input
 
 with open("main.prc", "r+") as file:
     lines = file.readlines()
@@ -169,5 +171,36 @@ with open("main.prc", "r+") as file:
                         libs.var.varSend(variable, nbrX)
                 except:
                     libs.whil.error()
+
+
+            ## len
+
+            if args[0] == "len":
+                if args[1] == "print":
+                    try:
+                        argument = args[2:1000000]
+                        libs.len.lenPrint(argument)
+                    except:
+                        libs.len.error()
+                else:
+                    libs.len.errorModeNtFound()
+
+            
+            ## input
+
+            if args[0] == "input":
+                if args[1] == "basic":
+                    try:
+                        argument = args[2:1000000]
+                        libs.input.inputBasic(argument)
+                    except:
+                        libs.input.error()
+                elif args[1] == "print":
+                    argument = args[2:1000000]
+                    libs.input.inputPrint(argument)
+                else:
+                    libs.input.errorNtFound()
+
+
         except:
             print("Check if you file has content")
