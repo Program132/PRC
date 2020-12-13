@@ -2,7 +2,7 @@
 
 ## Information
 
-PRC is a langage of programming create by Program!
+PRC is a programming langage create by Program!
 I use the langage Python to create PRC.
 This language will evolve over time!
 
@@ -13,11 +13,12 @@ This language will evolve over time!
 
 
 ## Soon
-* Boucles
-
->Started
 
 * Conditions 
+
+>Soon
+
+* List
 
 >Soon
 
@@ -34,6 +35,8 @@ _Print:_
     print Hello
 
 *Hello*
+
+
 
 
 
@@ -59,9 +62,12 @@ _Variable Example 2:_
 
 
 
+
+
 _Whil Example 1_
 
     whil print < 1 5 Hello everyone
+
 
 
 _Whil Example2_
