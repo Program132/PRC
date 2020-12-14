@@ -40,15 +40,15 @@ def addVar(_name, _value):
 
 
 def send(name):
-    if name == "":
-        sendError()
-    else:
+    try:
         resulte = variables[name]
         resulte1 = str(resulte).replace("[", '')
         resulte2 = str(resulte1).replace("]", '')
         resulte3 = str(resulte2).replace("'", '')
         resulte4 = str(resulte3).replace(",", '')
         return print(resulte4)
+    except:
+        return print("Error, your variable is not defined")
     
 
 def setV(name, value):

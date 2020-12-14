@@ -1,3 +1,4 @@
-len print Hello everyone how are you ?
-input basic Give me your name : 
-input print Where do you come frome ?
+lists My Value1 Value2
+sendL My
+lists L Program Programming Prc
+send L

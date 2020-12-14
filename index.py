@@ -6,6 +6,7 @@ import libs.mathPrint
 import libs.whil
 import libs.len
 import libs.input
+import libs.lists
 
 with open("main.prc", "r+") as file:
     lines = file.readlines()
@@ -200,6 +201,26 @@ with open("main.prc", "r+") as file:
                     libs.input.inputPrint(argument)
                 else:
                     libs.input.errorNtFound()
+
+            
+
+            ## lists
+
+            if args[0] == "lists":
+                if len(args) >= 2:
+                    listName = args[1]
+                    listV =  args[2:]
+                    libs.lists.addList(listName, listV)
+                else:
+                    libs.lists.error()
+
+            
+            if args[0] == "sendL":
+                if len(args) == 2:
+                    name = args[1]
+                    libs.lists.sendList(name)
+                else:
+                    libs.lists.errorSend()
 
 
         except:

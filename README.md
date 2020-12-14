@@ -1,4 +1,4 @@
-# PRC
+# PRC : Version 1
 
 ## Information
 
@@ -14,11 +14,7 @@ This language will evolve over time!
 
 ## Soon
 
-* Conditions 
-
->Soon
-
-* List
+* Conditions, start a bot in discord
 
 >Soon
 
