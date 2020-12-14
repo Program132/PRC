@@ -82,7 +82,7 @@ with open("main.prc", "r+") as file:
                     libs.var.serError()
                 else:
                     name = args[1]
-                    value = args[1:1000000]
+                    value = args[1:]
                     libs.var.setV(name, value)
 
             if args[0] == "setVar":
@@ -116,7 +116,7 @@ with open("main.prc", "r+") as file:
                 if len(args) >= 2:
                     if args[1] == "write":
                         f = args[2]
-                        text = str(args[3:1000])
+                        text = str(args[3:])
                         text = text.replace("[", "")
                         text = text.replace("]", "")
                         text = text.replace("'", "")
@@ -156,12 +156,12 @@ with open("main.prc", "r+") as file:
                 try:
                     if args[1] == "print":
                         if args[2] == "<": #check mode
-                            text = args[5:1000000]
+                            text = args[5:]
                             nbr1 = args[3]
                             nbr2 = args[4]
                             libs.whil.printWhilMoinsGrand(nbr1, nbr2, text)
                         elif args[2] == ">": #check mode
-                            text = args[5:1000000]
+                            text = args[5:]
                             nbr1 = args[3]
                             nbr2 = args[4]
                             libs.whil.printWhilgrandMoins(nbr1, nbr2, text)
@@ -248,6 +248,8 @@ with open("main.prc", "r+") as file:
                         libs.check.error("mode")
                 else:
                     libs.check.errro("basic")
+
+        
 
         else:
             print("Check if you file has content")
