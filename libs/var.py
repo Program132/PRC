@@ -1,5 +1,7 @@
 variables = {}
 
+## Errors
+
 def errorBasic():
     return print("Error, you must set name and a value!")
 
@@ -16,6 +18,8 @@ def setError():
     return print("Error, give the name and the new value!")
 
 
+## Functions
+
 def printAll():
     result = str(variables).replace("{", "")
     result2 = str(result).replace("}", "")
@@ -24,7 +28,7 @@ def printAll():
 
 
 def getVariables(name):
-    if name == "":
+    if len(name) == 0:
         getError()
     else:
         return variables[name]
@@ -100,6 +104,7 @@ def setVarEx(var1, var2):
     variables[var1] = variables[var2]
 
 
+
 ## Whil
 
 def varSend(var, nbr):
@@ -109,3 +114,59 @@ def varSend(var, nbr):
     while i < number:
         print(vari)
         i = i + 1
+
+
+
+
+#  check
+
+def printCheck(check1, mode, check2, printValue):
+    if mode == "=":
+        v = variables[check1]
+        if v == check2:
+            printValue = str(printValue).replace("[", "")
+            printValue = str(printValue).replace("]", "")
+            printValue = str(printValue).replace(",", "")
+            printValue = str(printValue).replace("'", "")
+            printValue = str(printValue).replace('"', "")
+            return print(printValue)
+        else:
+            return print("Check done! Your values are not equal.")
+
+    elif mode == "!=":
+        v = variables[check1]
+
+        if v != check2:
+            printValue = str(printValue).replace("[", "")
+            printValue = str(printValue).replace("]", "")
+            printValue = str(printValue).replace(",", "")
+            printValue = str(printValue).replace("'", "")
+            printValue = str(printValue).replace('"', "")
+            return print(printValue)
+        else:
+            return print("Check done! Your values it's euqal.")
+
+    elif mode == "<":
+        v = variables[check1]
+
+        if v != check2:
+            printValue = str(printValue).replace("[", "")
+            printValue = str(printValue).replace("]", "")
+            printValue = str(printValue).replace(",", "")
+            printValue = str(printValue).replace("'", "")
+            printValue = str(printValue).replace('"', "")
+            return print(printValue)
+        else:
+            return print("Check done! Your variable it's above of your value.")
+    elif mode == ">":
+        v = variables[check1]
+
+        if v != check2:
+            printValue = str(printValue).replace("[", "")
+            printValue = str(printValue).replace("]", "")
+            printValue = str(printValue).replace(",", "")
+            printValue = str(printValue).replace("'", "")
+            printValue = str(printValue).replace('"', "")
+            return print(printValue)
+        else:
+            return print("Check done! Your variable it's below of your value.")

@@ -7,6 +7,7 @@ import libs.whil
 import libs.len
 import libs.input
 import libs.lists
+import libs.check
 
 with open("main.prc", "r+") as file:
     lines = file.readlines()
@@ -16,7 +17,7 @@ with open("main.prc", "r+") as file:
         args = line.split()
 
         ## PRC
-        try:
+        if len(args) > 0:
             if args[0] == "prc":
                 if len(args) == 2:
                     try:
@@ -222,6 +223,31 @@ with open("main.prc", "r+") as file:
                 else:
                     libs.lists.errorSend()
 
+            ## check
 
-        except:
+
+            if args[0] == "check":
+                if len(args) > 8:
+                    if args[1] == "print":
+                        if args[2] == "(":
+                            var = args[3]
+                            checkmode = args[4]
+                            check = args[5]
+
+                            if args[6] == ")":
+                                if args[7] == "=>":
+                                    printValue = args[8:]
+                                    libs.var.printCheck(var, checkmode, check, printValue)
+                                else:
+                                    libs.check.error("=>")
+                            else:
+                                libs.check.error(")")
+                        else:
+                            libs.check.error("(")
+                    else:
+                        libs.check.error("mode")
+                else:
+                    libs.check.errro("basic")
+
+        else:
             print("Check if you file has content")

@@ -73,6 +73,13 @@ _Whil Example2_
 
 
 
+_check Example_
+
+    variable hello = Hello
+    check print ( hello = Hello ) => Yes, my var it's good!
+
+
+
 -------------------------------------------------
 
 
