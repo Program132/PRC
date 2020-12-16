@@ -5,9 +5,13 @@
 ## Information about PRC
 
 PRC : What is it ?
+
 PRC is a programmming language.
+
 Create by Program.
-Je will evolve and be improved over time.
+
+He will evolve and be improved over time.
+
 
 
 
@@ -17,6 +21,8 @@ _News_
 
 * print
 * variables
+* len
+* prc
 
 
 
