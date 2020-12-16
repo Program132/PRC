@@ -15,7 +15,7 @@ He will evolve and be improved over time.
 
 
 
-## Information Projet
+## Informations
 
 _News_
 
