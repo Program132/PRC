@@ -1,4 +1,8 @@
-mainPRC = "main.prc"
+import sys
+if len(sys.argv) > 1:
+    mainPRC = sys.argv[1]
+else:
+    mainPRC = "main.prc"
 
 def replace(mode, args):
     if mode == "pr":
