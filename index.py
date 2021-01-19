@@ -1,4 +1,12 @@
-mainPRC = "main.prc"
+import sys
+
+mainPRC = ""
+
+if len(sys.argv) > 1 and sys.argv[1].endswith("prc"):
+    mainPRC = sys.argv[1]
+else:
+    mainPRC = "main.prc"
+
 
 def re(mode, args):
     if mode == "pr":
