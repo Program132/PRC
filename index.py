@@ -1,6 +1,6 @@
 mainPRC = "main.prc"
 
-def replace(mode, args):
+def re(mode, args):
     if mode == "pr":
         args = str(args).replace(",", "")
         args = str(args).replace("[", "")
@@ -71,11 +71,9 @@ class prc_prc:
 prc_Error = prc_errors()
 
 
-class prc_variablesPrint:
+class prc_main:
     def __init__(self):
         self.variables = {}
-
-    #### Var
 
     # add var
 
@@ -93,10 +91,10 @@ class prc_variablesPrint:
     # Print text or print var
 
     def printing(self, arg):
-        if len(arg) == 1 and arg[0] in self.variables.keys():
+        if arg[0] in self.variables.keys():
             print(self.variables[arg[0]])
-        elif len(arg) > 1:
-            argument = replace("pr", arg)
+        elif len(arg) >= 1:
+            argument = re("pr", arg)
             print(argument)
         else:
             prc_Error.errorPrint()
@@ -170,13 +168,13 @@ class prc_variablesPrint:
 
     def inputPrint(self, text):
         if len(text) >= 1:
-            text = replace("pr", text)
+            text = re("pr", text)
             print(input(text))
         else:
             self.inputPrintError()
 
     def inputVar(self, var, text):
-        text = replace("pr", text)
+        text = re("pr", text)
         variable = input(text)
         if var in self.variables.keys():
             self.variables[var] = variable
@@ -186,7 +184,7 @@ class prc_variablesPrint:
 
 
 
-obj = prc_variablesPrint()
+obj = prc_main()
 obje = prc_prc()
 with open(mainPRC, "r+")as f:
     lines = f.readlines()
@@ -295,3 +293,18 @@ with open(mainPRC, "r+")as f:
                         obj.inputVar(args[2], args[3:])
                     else:
                         prc_Error.basicErrorInputVar()
+
+
+            ## test
+
+            if args[0] == "test":
+
+                for arg in lines:
+                    ar = arg.strip()
+                    ar = ar.split()
+
+                    if ar[0] == "cc":
+                        print("cc est là!")
+
+                    if ar[0] == "test2":
+                        break
