@@ -27,6 +27,8 @@ class prc_errors:
         self.basicerrorMath = "Error, give me two numbers/a variable and a number!"
         self.basicErrorInputVar = "Error, give me a variable who is definied and a text!"
         self.basicErrrorInputPrint = "Error, give me a text!"
+        self.basicErrorWhileVar = "Error, give me 1 var, 1 mode, 1 number and { to close the loop!"
+        self.errorWhileCode = "Eroor, give me the code !"
 
 
     def errorVar(self):
@@ -52,6 +54,12 @@ class prc_errors:
 
     def inputPrintError(self):
         print(self.basicErrrorInputPrint)
+
+    def errorWhileVar(self):
+        print(self.basicErrorWhileVar)
+
+    def whileVarMissingCode(self):
+        print(self.errorWhileCode)
 
 
 
@@ -170,8 +178,7 @@ class prc_main:
 
     
 
-            
-
+        
     ## input
 
     def inputPrint(self, text):
@@ -192,127 +199,160 @@ class prc_main:
 
 
 
+    ## While var
+    def whil(self, var, nbr, mode, ar):
+        number = int(nbr) - 1
+        v = int(self.variables[var])
+        while v <= number:
+            args = ar
+            run(args)
+            v += 1
+
+
+
 obj = prc_main()
 obje = prc_prc()
-with open(mainPRC, "r+")as f:
+
+
+with open(mainPRC, "r+") as f:
     lines = f.readlines()
     
+
+    n = 0
     for lin in lines:
-        line = lin.strip()
-        args = line.split()
 
-        if len(args) >= 0:
+        args = lin.strip().split()
 
-            ## Print
+        if args:
+######################## [[[[ {{{{  Function Run }}}} ]]]] ########################
+            
+            def run(args):
+                ## Print
 
-            if args[0] == "print":
-                obj.printing(args[1:])
+                if args[0] == "print":
+                    obj.printing(args[1:])
 
 
 
-            ## Variables
+                ## Variables
 
-            if args[0] == "variable":
-                if len(args) == 4:
-                    name = args[1]
-                    equal = args[2]
-                    value = args[3]
-                    if equal == "=":
-                        obj.addVar(name, value)
+                if args[0] == "variable":
+                    if len(args) == 4:
+
+                        name = args[1]
+                        equal = args[2]
+                        value = args[3]
+                        if equal == "=":
+                            obj.addVar(name, value)
+                        else:
+                            prc_Error.errorVar()
                     else:
                         prc_Error.errorVar()
-                else:
-                    prc_Error.errorVar()
 
 
-            if args[0] == "set":
-                if len(args) == 3:
-                    name = args[1]
-                    value = args[2]
-                    obj.setVar(name, value)
-                else:
-                    prc_Error.errorSetVar()
+                if args[0] == "set":
+                    if len(args) == 3:
+                        name = args[1]
+                        value = args[2]
+                        obj.setVar(name, value)
+                    else:
+                        prc_Error.errorSetVar()
 
 
-            
-            ## prc
+                
+                ## prc
 
-            if args[0] == "prc":
-                if len(args) == 2:
-                    argu  = args[1]
-                    if argu == "about":
-                        obje.about()
-                    elif argu == "discord":
-                        obje.discord()
-                    elif argu == "website" or argu == "web" or argu == "site":
-                        obje.website()
-                    elif argu == "doc" or argu == "documentation":
-                        obje.doc()
+                if args[0] == "prc":
+                    if len(args) == 2:
+                        argu  = args[1]
+                        if argu == "about":
+                            obje.about()
+                        elif argu == "discord":
+                            obje.discord()
+                        elif argu == "website" or argu == "web" or argu == "site":
+                            obje.website()
+                        elif argu == "doc" or argu == "documentation":
+                            obje.doc()
+                        else:
+                            obje.erro()
                     else:
                         obje.erro()
-                else:
-                    obje.erro()
 
 
 
-            ## len
+                ## len
 
-            if args[0] == "len":
-                if len(args) == 2:
-                    obj.lenVar(args[1])
-                else:
-                    prc_Error.basicerrorLenVar()
-
-                if len(args) >= 3:
-                    obj.basicLen(args[1:])
-                else:
-                    prc_Error.basicErrorLen()
-            
-
-            ## math
-
-            if args[0] == "mathPrint":
-                if len(args) == 3:
-                    obj.mathPrint(args[1], args[2])
-                else:
-                    prc_Error.errorMath()
-
-            if args[0] == "math":
-                if len(args) == 4:
-                    mode = args[1]
-                    var = args[2]
-                    nbr = args[3]
-                    obj.mathVar(mode, var, int(nbr))
-                else:
-                    prc_Error.errorMath()
-
-            
-
-            ## input
-
-            if args[0] == "input":
-                if len(args) >= 3 :
-                    if args[1] == "print":
-                        obj.inputPrint(args[2:])
+                if args[0] == "len":
+                    if len(args) == 2:
+                        obj.lenVar(args[1])
                     else:
-                        prc_Error.basicErrrorInputPrint()
+                        prc_Error.basicerrorLenVar()
 
-                    if args[1] == "var":
-                        obj.inputVar(args[2], args[3:])
+                    if len(args) >= 3:
+                        obj.basicLen(args[1:])
                     else:
-                        prc_Error.basicErrorInputVar()
+                        prc_Error.basicErrorLen()
+                
+
+                ## math
+
+                if args[0] == "mathPrint":
+                    if len(args) == 3:
+                        obj.mathPrint(args[1], args[2])
+                    else:
+                        prc_Error.errorMath()
+
+                if args[0] == "math":
+                    if len(args) == 4:
+                        mode = args[1]
+                        var = args[2]
+                        nbr = args[3]
+                        obj.mathVar(mode, var, int(nbr))
+                    else:
+                        prc_Error.errorMath()
+
+                
+
+                ## input
+
+                if args[0] == "input":
+                    if len(args) >= 3 :
+                        if args[1] == "print":
+                            obj.inputPrint(args[2:])
+                        else:
+                            prc_Error.basicErrrorInputPrint()
+
+                        if args[1] == "var":
+                            obj.inputVar(args[2], args[3:])
+                        else:
+                            prc_Error.basicErrorInputVar()
 
 
-            ## test
+                ## whil
 
-            if args[0] == "test":
+                if args[0] == "whil":
 
-                for arg in lines:
-                    ar = arg.strip()
-                    ar = ar.split()
+                    if len(args) > 4:
+                    
+                        var = args[1]
+                        mode = args[2]
+                        number = args[3]
+                        close = args[4]
 
-                    if ar[0] == "cc":
-                        print("cc est là!")
+                        if close == "{":
+                            line = n 
+                            debugArgs = []
+                            while not lines[line].strip().split()[0] == "}":
+                                line += 1
+                                l = lines[line].strip()
+                                debugArgs.append(l)
 
-                    if ar[0] == "test2":
-                        break
+                                result = l.split()
+                                        
+                                obj.whil(var, number, mode, result)
+                        else:
+                            prc_errors.errorWhileVar
+
+            run(args)
+
+        n += 1

@@ -2,7 +2,7 @@
 
 
 
-## Information about PRC
+## Information
 
 PRC : What is it ?
 
@@ -13,16 +13,13 @@ Create by Program.
 He will evolve and be improved over time.
 
 
+## Warnings
 
+Don't use whil in a whil.
 
-## Informations
+You will have a big bug in your terminal.
 
-_News_
-
-* print
-* variables
-* len
-* prc
+Thank you.
 
 
 
@@ -55,6 +52,25 @@ _variable 2_
 >MyValue
 
 >MyNewValue
+
+
+
+_whil_
+
+    variable repeat = 1
+    whil repeat = 5 {
+        print Hello !
+    }
+
+>Hello !
+
+>Hello !
+
+>Hello !
+
+>Hello !
+
+>Hello !
 
 
 
