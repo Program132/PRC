@@ -32,6 +32,7 @@ class prc_errors:
         self.errorWhileMode = "Error, give me a valid mode!"
         self.nbrUpWhil = "Error, your number need be up not below!"
         self.nbrDownWhil = "Error, your number need be below not up!"
+        self.errorWhilVarInt = "Error, you need enter a valid number a the variable value!"
 
 
     def errorVar(self):
@@ -72,6 +73,9 @@ class prc_errors:
 
     def whilNbrDown(self):
         print(self.nbrDownWhil)
+
+    def whilInt(self):
+        print(self.errorWhilVarInt)
 
 
 
@@ -215,20 +219,21 @@ class prc_main:
     ## Whil
 
     def whil(self, var, nbr, mode, ar):
-        number = int(nbr) - 1
-        number2 = int(nbr) + 1
-        if mode == "<":
+        try:
+            number = int(nbr)
             v = int(self.variables[var])
-            while v < number:
-                v += 1
-                run(ar)
-        elif mode == ">":
-            v = int(self.variables[var])
-            while v > number2:
-                v -= 1
-                run(ar)
-        else:
-            prc_Error.errorWhileMode
+            if mode == "<":
+                while v < number - 1:
+                    v += 1
+                    run(ar)
+            elif mode == ">":
+                while v > number + 1:
+                    v -= 1
+                    run(ar)
+            else:
+                prc_Error.errorWhileMode
+        except:
+            prc_Error.whilInt
 
 
 
