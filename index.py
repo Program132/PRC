@@ -28,7 +28,10 @@ class prc_errors:
         self.basicErrorInputVar = "Error, give me a variable who is definied and a text!"
         self.basicErrrorInputPrint = "Error, give me a text!"
         self.basicErrorWhileVar = "Error, give me 1 var, 1 mode, 1 number and { to close the loop!"
-        self.errorWhileCode = "Eroor, give me the code !"
+        self.errorWhileCode = "Eroor, give me the code!"
+        self.errorWhileMode = "Error, give me a valid mode!"
+        self.nbrUpWhil = "Error, your number need be up not below!"
+        self.nbrDownWhil = "Error, your number need be below not up!"
 
 
     def errorVar(self):
@@ -60,6 +63,16 @@ class prc_errors:
 
     def whileVarMissingCode(self):
         print(self.errorWhileCode)
+
+    def whileModeNotValid(self):
+        print(self.errorWhileMode)
+
+    def whilNbrUp(self):
+        print(self.nbrUpWhil)
+
+    def whilNbrDown(self):
+        print(self.nbrDownWhil)
+
 
 
 
@@ -199,14 +212,23 @@ class prc_main:
 
 
 
-    ## While var
+    ## Whil
+
     def whil(self, var, nbr, mode, ar):
         number = int(nbr) - 1
-        v = int(self.variables[var])
-        while v <= number:
-            args = ar
-            run(args)
-            v += 1
+        number2 = int(nbr) + 1
+        if mode == "<":
+            v = int(self.variables[var])
+            while v < number:
+                v += 1
+                run(ar)
+        elif mode == ">":
+            v = int(self.variables[var])
+            while v > number2:
+                v -= 1
+                run(ar)
+        else:
+            prc_Error.errorWhileMode
 
 
 

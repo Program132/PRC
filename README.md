@@ -58,9 +58,10 @@ _variable 2_
 _whil_
 
     variable repeat = 1
-    whil repeat = 5 {
+    whil repeat < 5 {
         print Hello !
     }
+    
 
 >Hello !
 
