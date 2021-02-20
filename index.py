@@ -1,3 +1,5 @@
+import AModPRC.help
+
 import sys
 
 mainPRC = ""
@@ -304,6 +306,20 @@ with open(mainPRC, "r+") as f:
                             obje.erro()
                     else:
                         obje.erro()
+
+                ## help
+
+                if args[0] == "help":
+                    if len(args) == 2:
+                        arg = args[1]
+                        if arg == "learn" or arg == "Learn":
+                            AModPRC.help.prcDoc()
+                        elif arg == "author" or arg == "Author":
+                            AModPRC.help.prcAuthor()
+                        else:
+                            print("Error, please give correct argument(s)!")
+                    else:
+                        print("Give me 1 argument : help argument")
 
 
 
