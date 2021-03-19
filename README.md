@@ -13,15 +13,6 @@ Create by Program.
 He will evolve and be improved over time.
 
 
-## Warnings
-
-Don't use whil in a whil.
-
-You will have a big bug in your terminal.
-
-Thank you.
-
-
 
 ## Code Example
 
@@ -73,6 +64,42 @@ _whil_
 
 >Hello !
 
+
+
+_2 whil_
+
+    variable repeat = 0
+    variable my = 2
+    whil repeat < 4 {
+        print Hello
+        whil my < 10 {
+            print hm...
+        }
+    }
+
+>Hello
+
+>Hello
+
+>Hello
+
+>Hello
+
+>hm...
+
+>hm...
+
+>hm...
+
+>hm...
+
+>hm...
+
+>hm...
+
+>hm...
+
+>hm...
 
 
 
