@@ -393,6 +393,7 @@ with open(mainPRC, "r+") as f:
                                 result = l.split()
                                         
                                 obj.whil(var, number, mode, result)
+                                return
                         else:
                             prc_errors.errorWhileVar
 
