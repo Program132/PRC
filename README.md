@@ -47,7 +47,7 @@ _whil_
 
 
 
-_2 whil_
+_whil 2_
 
     variable repeat = 0
     variable my = 2
@@ -67,6 +67,11 @@ _check_
         print Hello !
         print How are you ?
     }
+
+
+
+_check 2_
+
     variable n = MyNameIsProgram
     check str n = MyNameIsProgram {
         print My name is Program ok ?!
@@ -77,7 +82,7 @@ _check_
 
 ## Links
 
-Go to the link to start, learn PRC (Version 1)!
+Go to the link to start, learn PRC (Documentation soon )!
 
 https://program132.github.io/PRC/
 
