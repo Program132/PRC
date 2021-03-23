@@ -16,6 +16,7 @@ def re(mode, args):
         args = str(args).replace("[", "")
         args = str(args).replace("]", "")
         args = str(args).replace("'", "")
+        args = str(args).replace('"', "")
         return args
 
 
@@ -29,12 +30,14 @@ class prc_errors:
         self.basicerrorMath = "Error, give me two numbers/a variable and a number!"
         self.basicErrorInputVar = "Error, give me a variable who is definied and a text!"
         self.basicErrrorInputPrint = "Error, give me a text!"
-        self.basicErrorWhileVar = "Error, give me 1 var, 1 mode, 1 number and { to close the loop!"
+        self.basicErrorWhileVar = "Error, give me : 1 var, 1 mode, 1 number and { to close the loop!"
         self.errorWhileCode = "Eroor, give me the code!"
         self.errorWhileMode = "Error, give me a valid mode!"
         self.nbrUpWhil = "Error, your number need be up not below!"
         self.nbrDownWhil = "Error, your number need be below not up!"
         self.errorWhilVarInt = "Error, you need enter a valid number a the variable value!"
+        self.errorCheckInt = "Error, you need enter a valid number in your variable value!"
+        self.basicCheck = "Error, give me : 1  mode (what to check),   1 var, 1 mode (= for example), 1 number and { to close the check!"
 
 
     def errorVar(self):
@@ -78,6 +81,12 @@ class prc_errors:
 
     def whilInt(self):
         print(self.errorWhilVarInt)
+
+    def checkInt(self):
+        print(self.errorCheckInt)
+
+    def errorCheck(self):
+        print(self.basicCheck)
 
 
 
@@ -237,6 +246,27 @@ class prc_main:
         except:
             prc_Error.whilInt
 
+            
+            
+    #check
+
+    def check(self, m, var, nbr, mode, ar):
+        try:
+            if m == "number":
+                number = int(nbr)
+                self.variables[var] = int(self.variables[var])
+                if self.variables[var] == number:
+                    run(ar)
+            elif m == "str" or m == "string":
+                number = str(nbr)
+                self.variables[var] = str(self.variables[var])
+                if self.variables[var] == number:
+                    run(ar)
+            else:
+                print("Your mode to what check isn't found.")
+        except:
+            prc_Error.checkInt
+
 
 
 obj = prc_main()
@@ -393,9 +423,42 @@ with open(mainPRC, "r+") as f:
                                 result = l.split()
                                         
                                 obj.whil(var, number, mode, result)
-                                return
+                                pass
                         else:
                             prc_errors.errorWhileVar
+                    else:
+                        prc_errors.errorWhileVar
+
+
+
+                ## check
+
+                if args[0] == "check":
+
+                    if len(args) > 5:
+                        
+                        m = args[1]
+                        var = args[2]
+                        mode = args[3]
+                        number = args[4]
+                        close = args[5]
+
+                        if close == "{":
+                            line = n 
+                            debugArgs = []
+                            while not lines[line].strip().split()[0] == "}":
+                                line += 1
+                                l = lines[line].strip()
+                                debugArgs.append(l)
+
+                                result = l.split()
+                                        
+                                obj.check(m, var, number, mode, result)
+                                pass
+                        else:
+                            prc_errors.errorCheck
+                    else:
+                        prc_errors.errorCheck
 
             run(args)
 
