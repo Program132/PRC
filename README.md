@@ -19,17 +19,13 @@ He will evolve and be improved over time.
 _print_
 
     print Hello everyone
-
->Hello everyone
-
+    
 
 
 _variable 1_
 
     variable MyVar = MyValue
     print MyVar
-
->MyValue
 
 
 
@@ -40,10 +36,6 @@ _variable 2_
     set MyVar MyNewValue
     print MyVar
 
->MyValue
-
->MyNewValue
-
 
 
 _whil_
@@ -52,17 +44,6 @@ _whil_
     whil repeat < 5 {
         print Hello !
     }
-    
-
->Hello !
-
->Hello !
-
->Hello !
-
->Hello !
-
->Hello !
 
 
 
@@ -77,29 +58,20 @@ _2 whil_
         }
     }
 
->Hello
 
->Hello
 
->Hello
+_check_
 
->Hello
-
->hm...
-
->hm...
-
->hm...
-
->hm...
-
->hm...
-
->hm...
-
->hm...
-
->hm...
+    variable h = 5
+    check number h = 5 {
+        print Hello !
+        print How are you ?
+    }
+    variable n = MyNameIsProgram
+    check str n = MyNameIsProgram {
+        print My name is Program ok ?!
+        print Im so sorry.
+    }
 
 
 
