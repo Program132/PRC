@@ -223,15 +223,15 @@ class prc_main:
     def whil(self, var, nbr, mode, ar):
         try:
             number = int(nbr)
-            v = int(self.variables[var])
+            self.variables[var] = int(self.variables[var])
             if mode == "<":
-                while v < number - 1:
-                    v += 1
+                while self.variables[var] < number - 1:
                     run(ar)
+                    self.variables[var] += 1
             elif mode == ">":
-                while v > number + 1:
-                    v -= 1
+                while self.variables[var] > number + 1:
                     run(ar)
+                    self.variables[var] -= 1
             else:
                 prc_Error.errorWhileMode
         except:
