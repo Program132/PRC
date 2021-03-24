@@ -9,8 +9,6 @@ Do you need information about PRC : <a href="#about">About</a>
 
 Do you need know how use PRC : <a href="#start">Quick Start</a>
 
-Do you need help to start PRC : Documentation
-
 ## About
 <section class="about" id="about">
 
@@ -21,11 +19,11 @@ PRC is an interpreted language. This language will be improved over time !
 
 This programming language can be tested on the Discord server and on your Discord server by using our own Discord BOT.
 
-- ['View GitHub'](https://github.com/Program132/PRC)
+- [View GitHub](https://github.com/Program132/PRC)
 
-- ['Discord Server'](https://discord.com/invite/e44jCnpTqA)
+- [Discord Server](https://discord.com/invite/e44jCnpTqA)
 
-- ['Discord BOT'](https://discord.com/oauth2/authorize?client_id=785042232268816385&permissions=8&scope=bot)
+- [Discord BOT](https://discord.com/oauth2/authorize?client_id=785042232268816385&permissions=8&scope=bot)
 
 </section>
 
