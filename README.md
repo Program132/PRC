@@ -54,6 +54,12 @@ To run the code, you must open a console prompte and write :
 
 ### Basic : 
 
-<a href="https://github.com/Program132/PRC/blob/PRC/doc/print.md">Print</a>
+1. <a href="https://github.com/Program132/PRC/blob/PRC/doc/print.md">Print</a>
 
 </section>
+
+## Thank you
+
+Thank you for all ! 
+
+Enjoy !
