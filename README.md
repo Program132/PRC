@@ -9,6 +9,8 @@ Do you need information about PRC : <a href="#about">About</a>
 
 Do you need know how use PRC : <a href="#start">Quick Start</a>
 
+Documentation of PRC : <a href="#doc">Documentation</a>
+
 ## About
 <section class="about" id="about">
 
@@ -28,7 +30,7 @@ This programming language can be tested on the Discord server and on your Discor
 </section>
 
 
-## Quick Start
+## Start
 <section class="start" id="start">
 
 How to use PRC ?
@@ -44,5 +46,14 @@ Create a folder for your project, you must extract the contents of the project i
 To code in PRC, you need edit the main.prc file.
 
 To run the code, you must open a console prompte and write :
+
+</section>
+
+## Documentation
+<section class="doc" id="doc">
+
+### Basic : 
+
+<a href="https://github.com/Program132/PRC/blob/PRC/doc/print.md">Print</a>
 
 </section>
