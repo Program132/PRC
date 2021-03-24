@@ -1,95 +1,50 @@
-# PRC | Version 2
+# PRC
+
+## Welcome to PRC !
 
 
+Hello, welcome to my project, PRC.
 
-## Information
+Do you need information about PRC : <a href="#about">About</a>
 
-PRC : What is it ?
+Do you need know how use PRC : <a href="#start">Quick Start</a>
 
-PRC is a programmming language.
+Do you need help to start PRC : Documentation
 
-Create by Program.
+## About
+<section class="about" id="about">
 
-He will evolve and be improved over time.
+PRC, what is it ?
 
+PRC is an interpreted language. This language will be improved over time !
+                                                                > By Program132
 
+This programming language can be tested on the Discord server and on your Discord server by using our own Discord BOT.
 
-## Code Example
+- ['View GitHub'](https://github.com/Program132/PRC)
 
-_print_
+- ['Discord Server'](https://discord.com/invite/e44jCnpTqA)
 
-    print Hello everyone
-    
+- ['Discord BOT'](https://discord.com/oauth2/authorize?client_id=785042232268816385&permissions=8&scope=bot)
 
-
-_variable 1_
-
-    variable MyVar = MyValue
-    print MyVar
-
-
-
-_variable 2_
-
-    variable MyVar = MyValue
-    print MyVar
-    set MyVar MyNewValue
-    print MyVar
+</section>
 
 
+## Quick Start
+<section class="start" id="start">
 
-_whil_
+How to use PRC ?
 
-    variable repeat = 1
-    whil repeat < 5 {
-        print Hello !
-    }
+To use PRC language and code with it, you will need to have :
 
+- <a href="https://www.python.org/downloads/">Download Python </a>
 
+- <a href="https://github.com/Program132/PRC">Download the Project</a>
 
-_whil 2_
+Create a folder for your project, you must extract the contents of the project inside.
 
-    variable repeat = 0
-    variable my = 2
-    whil repeat < 4 {
-        print Hello
-        whil my < 10 {
-            print hm...
-        }
-    }
+To code in PRC, you need edit the main.prc file.
 
+To run the code, you must open a console prompte and write :
 
-
-_check_
-
-    variable h = 5
-    check number h = 5 {
-        print Hello !
-        print How are you ?
-    }
-
-
-
-_check 2_
-
-    variable n = MyNameIsProgram
-    check str n = MyNameIsProgram {
-        print My name is Program ok ?!
-        print Im so sorry.
-    }
-
-
-
-## Links
-
-Go to the link to start, learn PRC (Documentation soon )!
-
-https://program132.github.io/PRC/
-
-Join the server discord to see update, to ask anything and everthing, the news and more!
-
-https://discord.gg/e44jCnpTqA
-
-Go to my website to know things about me.
-
-https://program132.github.io/
+</section>
