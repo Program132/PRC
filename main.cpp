@@ -10,11 +10,10 @@
 #include "include/printing.hpp" 
 
 std::unordered_map<std::string, std::string> variables{};
-using namespace N;
 
 int main()
 {
-    Printing dPrint;
+    N::Printing dPrint;
 
     std::ifstream myFile {"main.prc"};
 
