@@ -9,7 +9,7 @@ Do you need information about PRC : <a href="#about">About</a>
 
 Do you need know how use PRC : <a href="#start">Quick Start</a>
 
-Documentation of PRC : <a href="#doc">Documentation</a>
+Documentation of PRC : <a href="#documentation">Documentation</a>
 
 ## About
 <section class="about" id="about">
@@ -50,7 +50,7 @@ To run the code, you must open a console prompte and write :
 </section>
 
 ## Documentation
-<section class="doc" id="doc">
+<section class="documentation" id="documentation">
 
 ### Basic : 
 
