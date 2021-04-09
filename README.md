@@ -2,9 +2,9 @@
 
 ## Information
 
-PRC is a programming language create by Program. This language will be improve all time !
+PRC is a programming language created by Program. This language is still in progress but constantly update!
 
-The V3 of PRC will arrive soon !
+PRC v3 is coming soon !
 
 ## Links
 
