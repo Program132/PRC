@@ -35,17 +35,11 @@ This programming language can be tested on the Discord server and on your Discor
 
 How to use PRC ?
 
-To use PRC language and code with it, you will need to have :
-
-- <a href="https://www.python.org/downloads/">Download Python </a>
-
-- <a href="https://github.com/Program132/PRC">Download the Project</a>
-
-Create a folder for your project, you must extract the contents of the project inside.
+Extract your folder. Open this folder with VS Code, Sublime Text or other.
 
 To code in PRC, you need edit the main.prc file.
 
-To run the code, you must open a console prompte and write :
+To execute your code, run with a command prompt and opne the file .exe !
 
 </section>
 
@@ -56,6 +50,7 @@ To run the code, you must open a console prompte and write :
 
 1. <a href="https://github.com/Program132/PRC/blob/PRC/doc/print.md">Print</a>
 2. <a href="https://github.com/Program132/PRC/blob/PRC/doc/var.md">Variable</a>
+2. <a href="https://github.com/Program132/PRC/blob/PRC/doc/prc.md">prc</a>
 
 </section>
 
