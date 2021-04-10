@@ -1,6 +1,6 @@
 # Documentation
 
-## Print
+## prc
 
 You need join the discord ? See the documentation ? Have more information ?
 
