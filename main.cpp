@@ -5,7 +5,6 @@
 #include <sstream>
 #include <unordered_map>
 #include <iterator>
-#include <string_view>
 
 #include "include/printing.hpp" 
 
@@ -35,7 +34,7 @@ int main()
                 cc += ' ';
             }
 
-            dPrint.doprint(cc);
+            dPrint.do_print(cc);
         }
     }
 
